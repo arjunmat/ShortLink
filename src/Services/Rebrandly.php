@@ -70,7 +70,7 @@ class Rebrandly extends Service
             'query' => [
                 'apikey' => config('shortlink.rebrandly.key')
             ],
-            'body' => json_encode(['destination' => $shortUrl])
+            'body' => json_encode(['destination' => $shortUrl, 'domain' => ['fullName' => config('shortlink.rebrandly.domain']])
         ]);
 
         $result = json_decode($response->getBody());
