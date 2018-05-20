@@ -49,6 +49,7 @@ return [
     'rebrandly' => [
         'url' => env('SHORTLINK_REBRANDLY_URL', 'https://api.rebrandly.com/v1'),
         'key' => env('SHORTLINK_REBRANDLY_KEY', 'your_rebrandly_api_key'),
+        "domain" => env('SHORTLINK_REBRANDLY_DOMAIN', 'your_rebrandly_domain'),
     ],
 
 
